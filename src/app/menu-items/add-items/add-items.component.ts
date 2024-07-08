@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { InventoryListMockService } from '../../app-logic/inventory-list-mock.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { InventoryItem } from '../../app-logic/inventory-item';
+import { Options } from 'ngx-qrcode-styling';
 
 
 @Component({
@@ -15,6 +16,25 @@ export class AddItemsComponent implements OnInit{
   addItemForm!: FormGroup;
   item! : InventoryItem;
   itemId!: number;
+
+  public config: Options = {
+    width: 300,
+    height: 300,
+    data: "https://www.facebook.com/",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+    margin: 5,
+    dotsOptions: {
+      color: "#f4acb7",
+      type: "dots"
+    },
+    backgroundOptions: {
+      color: "#ffffff",
+    },
+    imageOptions: {
+      crossOrigin: "anonymous",
+      margin: 0
+    }
+  };
 
   constructor(private fb : FormBuilder,
     private inventoryListMockService : InventoryListMockService,

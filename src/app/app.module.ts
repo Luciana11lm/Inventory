@@ -11,7 +11,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { QrCodeModule } from 'ng-qrcode';
-import { NgxScannerQrcodeComponent } from 'ngx-scanner-qrcode';
+import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode';
+import { NgxQrcodeStylingModule } from 'ngx-qrcode-styling';
 
 
 @NgModule({
@@ -30,6 +31,9 @@ import { NgxScannerQrcodeComponent } from 'ngx-scanner-qrcode';
     ReactiveFormsModule,
     MatInputModule,
     QrCodeModule,
+    NgxQrcodeStylingModule,
+    NgxScannerQrcodeModule
+   
   ],
   providers: [
     provideAnimationsAsync()

@@ -51,7 +51,7 @@
 
 <h3 class="header">Add inventory item</h3>
 <div class="row">
-  <div class="column">
+  <div class="column" id="form-container">
 <form [formGroup]="addItemForm" (ngSubmit)="onSubmit()" class="add-item-form ">
   <p>
     <mat-form-field appearance="outline" class="custom-mat-form-field">
@@ -148,9 +148,12 @@
   </button>
 </form>
 </div>
-<div>
-
+<div class="column">
+  <div *ngIf="itemId" class="centered">
+    <qr-code [value]="itemId.toString()" size="350" errorCorrectionLevel="M"></qr-code>
+  </div>
 </div>
 </div>
 
 <p>Form value: {{ addItemForm.value | json }}</p>
+<!--<ngx-qrcode-styling [config]="config">-->
