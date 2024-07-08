@@ -1,0 +1,26 @@
+<div class="contact_container">
+  <div class="form_section">
+     <h3>Contact Us</h3>
+     <form>
+      <label for="name">Name</label>
+      <input type="text" class="contact_input" name="name" placeholder="Your name..">
+      <label for="email">Email</label>
+      <input type="email" class="contact_input" name="email" placeholder="Your email...">
+      <label for="phone">Phone</label>
+      <input type="phone" class="contact_input" name="phone" placeholder="Your phone number...">
+      <label for="subject">Subject</label>
+      <textarea class="contact_input" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+     </form>
+     <button class="submit_btn">Submit</button>
+  </div>
+ 
+  <div>
+    <b>Deposit information : </b><i>{{contactData.info}}</i><br/>
+    <b>Phone : </b><i>{{contactData.phone}}</i><br/>
+    <b>Address : </b><i>{{contactData.address}}</i><br/>
+    <b>Time Slot : </b><i>{{contactData.timeSlot}}</i><br/>
+    <b>Open Days : </b><i>{{contactData.openDays}}</i><br/>
+  </div>
+</div>
+
+

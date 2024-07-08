@@ -1,0 +1,156 @@
+
+<!--
+<form [formGroup]="addItemForm" (ngSubmit)="onSubmit()">
+  <div class="form-div" id="form-container"> 
+    <label class="form-div-text">
+      Item Name:
+    </label>
+    <input type="text" class="form-div-input" formControlName="name">
+  </div>
+
+  <div class="form-div">
+    <label class="form-div-text">
+      Description:
+    </label>
+    <textarea id="description" formControlName="description"></textarea>
+  </div>
+
+  <div class="form-div">
+    <label class="form-div-text">
+      User:
+    </label>
+    <input type="text" class="form-div-input" formControlName="user">
+  </div>
+
+  <div class="form-div">
+    <label class="form-div-text">
+      Location:
+    </label>
+    <input type="text" class="form-div-input" formControlName="location"> 
+  </div>
+
+  <div class="form-div">
+    <label class="form-div-text">
+      Inventory Number:
+    </label>
+    <input type="number" class="form-div-input" formControlName="inventoryNumber">
+  </div>
+
+  <div class="form-div">
+    <label class="form-div-text">
+      Created At:
+    </label>
+    <input class="form-div-input" formControlName="createdAt">
+  </div>
+
+  <button type="submit" [disabled]="!addItemForm.valid" class="add-item-btn">Submit</button>
+</form>
+
+<p>Form value: {{addItemForm.value | json}}</p>
+-->
+
+<h3 class="header">Add inventory item</h3>
+<div class="row">
+  <div class="column">
+<form [formGroup]="addItemForm" (ngSubmit)="onSubmit()" class="add-item-form ">
+  <p>
+    <mat-form-field appearance="outline" class="custom-mat-form-field">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        placeholder="Item name"
+        type="text"
+        formControlName="name"
+        required
+      />
+      <mat-error *ngIf="hasError('name', 'required')"
+        >Name is required.</mat-error
+      >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" class="add-item-field">
+      <mat-label>Description</mat-label>
+      <textarea
+        matInput
+        placeholder="Item description"
+        formControlName="description"
+        required
+      ></textarea>
+      <mat-error *ngIf="hasError('description', 'required')"
+        >Description is required.</mat-error
+      >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" class="add-item-field">
+      <mat-label>User</mat-label>
+      <input
+        matInput
+        placeholder="User name"
+        type="text"
+        formControlName="user"
+        required
+      />
+      <mat-error *ngIf="hasError('user', 'required')"
+        >User name is required.</mat-error
+      >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" class="add-item-field">
+      <mat-label>Location</mat-label>
+      <input
+        matInput
+        placeholder="Location"
+        type="text"
+        formControlName="location"
+        required
+      />
+      <mat-error *ngIf="hasError('location', 'required')"
+        >Location is required.</mat-error
+      >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" class="add-item-field">
+      <mat-label>Inventory Number</mat-label>
+      <input
+        matInput
+        placeholder="Inventory Number"
+        type="number"
+        formControlName="inventoryNumber"
+        required
+      />
+      <mat-error *ngIf="hasError('inventoryNumber', 'required')"
+        >Inventory Number is required.</mat-error
+      >
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline" class="add-item-field">
+      <mat-label>Created At</mat-label>
+      <input
+        matInput
+        placeholder="Created At"
+        type="date"
+        formControlName="createdAt"
+        required
+      />
+      <mat-error *ngIf="hasError('createdAt', 'required')"
+        >Created At is required.</mat-error
+      >
+    </mat-form-field>
+  </p>
+
+  <button mat-raised-button type="submit" [disabled]="!addItemForm.valid" class="add-item-btn">
+    Submit
+  </button>
+</form>
+</div>
+<div>
+
+</div>
+</div>
+
+<p>Form value: {{ addItemForm.value | json }}</p>

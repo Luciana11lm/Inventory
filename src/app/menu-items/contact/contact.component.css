@@ -1,0 +1,88 @@
+.contact_container{
+  background: #ffc8dd;
+  height: auto;
+  width: 100%;
+  max-width: 900px;
+  align-items: center;
+  border-radius: 30px;
+  margin: 30px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff006e;
+  width: 100%;
+  font-size: 30px;
+}
+
+.form_section{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 300px;
+}
+
+.contact_input, .contact_submit {
+  border-radius: 30px;
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.contact_input:focus {
+  outline: none;
+  border-color: #d41193;
+}
+
+.contact_submit {
+  background-color: #ffb3c1;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+label {
+  margin-top: 5px; 
+  align-self: flex-start; 
+  color: #ff006e;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+}
+
+.contact_submit:hover {
+  background-color: #ff8a9e;
+}
+
+.submit_btn{
+  width: 100px;
+  height: 30px;
+  background-color: #ff8a9e;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.image_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.contact_photo {
+  max-width: 100%;
+  border-radius: 20px;
+}

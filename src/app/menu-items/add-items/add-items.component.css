@@ -1,0 +1,81 @@
+.header{
+  font-size: 30px;
+  margin-top: 20px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #ff006e;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.form-div{
+  display: grid;
+  grid-template-columns: 140px 200px;
+  grid-template-areas: "theText theInput";
+  padding-bottom: 20px;
+}
+
+.form-div-text{
+  grid-area: theText;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.form-div-input{
+  grid-area: theInput;
+}
+
+#form-container{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add-item-btn{
+  height: 40px;
+  width: 100px;
+  border-radius: 30px;
+  background-color: #f4acb7;
+  border: none;
+  color: white;
+}
+
+.add-item-form{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color:pink;
+  color: white;
+  width: 100%;
+  max-width: 500px; 
+  padding: 20px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 30px; 
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.row{
+  display: flex;
+}
+
+.column{
+  flex: 50%;
+  padding: 10px;
+}
+
+.centered{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -350px;
+  margin-left: -350px;
+
+}

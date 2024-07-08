@@ -1,0 +1,38 @@
+.inventory-title{
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #ff006e;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#table, #custom-paginator { 
+  margin-left: 20px;
+  background-color: pink;
+  color: white;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.table-checkbox {
+  color: pink;
+}
+
+.invetory-header{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px; 
+}
+
+.delete-btn {
+  height: 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: pink;
+  color: white;
+  margin-right: 15px;
+}

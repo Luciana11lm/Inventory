@@ -1,0 +1,18 @@
+
+<div>
+  <div *ngIf="!itemFound">Item not found </div>
+  <div *ngIf="itemFound">
+    <b>Item information : </b><i>{{item.id}}</i><br/>
+    <b>Name : </b><i>{{item.name}}</i><br/>
+    <b>Description : </b><i>{{item.description}}</i><br/>
+    <b>Usre : </b><i>{{item.user}}</i><br/>
+    <b>Location : </b><i>{{item.location}}</i><br/>
+    <b>Inventory Number : </b><i>{{item.inventoryNumber}}</i><br/>
+    <b>Created At : </b><i>{{item.createdAt}}</i><br/>
+    <b>Mdified At : </b><i>{{item.modifiedAt}}</i><br/>
+    <b>Status : </b><i>{{item.deleted}}</i><br/>
+    <p><button mat-raised-button (click)="edit()">Edit</button></p>
+  </div>
+</div>
+
+
